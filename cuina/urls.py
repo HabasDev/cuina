@@ -19,9 +19,15 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')), # Esto conecta la raíz con tu app home
+    path('', include('home.urls')), # Esto conecta la raíz con app home
     #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     path('', include('home.urls')),
+    path('usuarios/', include('registro_usuarios.urls')),
+    path('', include('faqs.urls')),
+    path('', include('peticiones_admin.urls')),
+
+
+
     #path('registro/', include('registro_usuarios.urls')),
     #path('recetas/', include('recetas.urls')),
     #path('introducir/', include('introducir_recetas.urls')),

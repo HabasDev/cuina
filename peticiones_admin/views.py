@@ -1,5 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
-def admin_view(request):
-    return render(request, 'peticiones_admin/admin.html')
+def peticiones(request):
+    return render(request, 'peticiones_admin/peticiones.html')
