@@ -1,5 +1,4 @@
 {% load static %}
-<!--#Aqui va a ir el Footer y el menu global (la base)#-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,10 +17,11 @@
         </nav>
     </header>
 
-    <main class="contenedor">
+    <main>
         {% block content %}
         {% endblock %}
     </main>  
+
     <footer class="globalFooter">
         <p><b>Associació Daniel Blanxart</b> | Instagram - Facebook - Twitter</p>
         <div class="footer-links">
@@ -32,6 +32,5 @@
             Pagaments: 💳 Visa | 💳 Mastercard | 🅿️ PayPal
         </div>
     </footer>
-    
 </body>
 </html>
