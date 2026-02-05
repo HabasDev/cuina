@@ -103,10 +103,16 @@ body, html {
 }
 
 /* --- PETICIONES (admin)--- */
+h2, 
+p {
+  text-align: center;
+}
+
 .form-peticiones {
     max-width: 600px;
-    margin-top: 20px;
+    margin: 20px auto;
 }
+
 
 .form-peticiones input,
 .form-peticiones textarea {
