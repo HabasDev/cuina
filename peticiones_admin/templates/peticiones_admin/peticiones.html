@@ -1,23 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Peticiones</h2>
+<div class="bodyPeticiones">
+    <h2>Peticiones</h2>
+    <p>Desde este formulario puedes enviarnos sugerencias, dudas o peticiones relacionadas con la asociación.</p>
 
-<p>
-    Desde este formulario puedes enviarnos sugerencias, dudas o peticiones
-    relacionadas con la asociación.
-</p>
+    <form class="form-peticiones">
 
-<form class="form-peticiones">
-    <label>Nombre</label><br>
-    <input type="text"><br><br>
+  
+        <label>Nombre</label><br>
+        <input type="text"><br><br>
 
-    <label>Email</label><br>
-    <input type="email"><br><br>
+        <label>Email</label><br>
+        <input type="email"><br><br>
 
-    <label>Mensaje</label><br>
-    <textarea rows="5"></textarea><br><br>
+        <label>Mensaje</label><br>
+        <textarea rows="5"></textarea><br><br>
 
-    <button type="submit">Enviar petición</button>
-</form>
+        <button type="submit">Enviar petición</button>
+    </form>
+</div>
 {% endblock %}
