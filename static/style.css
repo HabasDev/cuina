@@ -67,11 +67,10 @@ body, html {
 .mainHome {
     display: flex;
     width: 100%;
-    height: calc(100vh - 140px); /* Restamos el alto de header y footer */
+    height: calc(80vh - 80px); /* Restamos el alto de header y footer */
     overflow: hidden;
     margin: 0;
     padding: 0;
-    border: 3px solid red;
 }
 
 .mainIzquierda {
