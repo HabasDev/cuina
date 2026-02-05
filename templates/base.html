@@ -25,27 +25,39 @@
     <!--Banner Cookies-->
     <div id="cookieBanner" class="cookie-banner">
         <p>
-            Las mejores galletas de la ciudad
+            Las mejores galletas de la ciudad que compartimos con 987 socios. 
+
         </p>
         <button onclick="aceptarCookies()">Aceptar</button>
     </div>
+<!-- Banner Política de Privacidad -->
+    <div id="privacyBanner" class="privacy-banner">
+        <p>
+            De acuerdo con la normativa vigente en protección de datos, informamos que los
+            datos personales facilitados serán tratados de forma confidencial y utilizados
+            únicamente para la gestión interna de la asociación Cook & Chill.
+        </p>
+        <button onclick="cerrarPrivacidad()">Cerrar</button>
+    </div>
+
     <footer class="globalFooter">
         <p><b>Associación Daniel Blanxart</b> | Instagram - Facebook - Twitter</p>
         <div class="footer-links">
             <a href="javascript:void(0)" onclick="document.getElementById('cookieBanner').style.display='block'">
                 Cookies
             </a>
-            <a href="javascript:alert('Política de privacidad...')">Privacitat</a>
+            <a href="javascript:void(0)" onclick="document.getElementById('privacyBanner').style.display='block'">Privacidad</a>
         </div>
         <div class="payments">
             Pagaments: 💳 Visa | 💳 Mastercard | 🅿️ PayPal
         </div>
     </footer>
-
-
     <script>
         function aceptarCookies(){
             document.getElementById('cookieBanner').style.display = 'none';
+        }
+        function cerrarPrivacidad() {
+            document.getElementById('privacyBanner').style.display = 'none';
         }
     </script>
 </body>

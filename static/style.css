@@ -197,6 +197,33 @@ body, html {
     border-radius: 5px; 
 }
 
+/*Privacidad*/
+/* --- Banner Política de Privacidad --- */
+.privacy-banner {
+    position: fixed;
+    bottom: 90px; /* encima del footer */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: none;
+    z-index: 2000;
+    max-width: 500px;
+    text-align: center;
+}
+
+.privacy-banner button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 /* --- Login --- */
 .regusersForm {
     margin: 160px auto 0 auto; /* top + centrado horizontal */
