@@ -22,15 +22,31 @@
         {% endblock %}
     </main>  
 
+    <!--Banner Cookies-->
+    <div id="cookieBanner" class="cookie-banner">
+        <p>
+            Las mejores galletas de la ciudad
+        </p>
+        <button onclick="aceptarCookies()">Aceptar</button>
+    </div>
     <footer class="globalFooter">
         <p><b>Associación Daniel Blanxart</b> | Instagram - Facebook - Twitter</p>
         <div class="footer-links">
-            <a href="javascript:alert('Política de cookies...')">Cookies</a> | 
+            <a href="javascript:void(0)" onclick="document.getElementById('cookieBanner').style.display='block'">
+                Cookies
+            </a>
             <a href="javascript:alert('Política de privacidad...')">Privacitat</a>
         </div>
         <div class="payments">
             Pagaments: 💳 Visa | 💳 Mastercard | 🅿️ PayPal
         </div>
     </footer>
+
+
+    <script>
+        function aceptarCookies(){
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
