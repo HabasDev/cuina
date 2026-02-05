@@ -13,6 +13,8 @@ body, html {
     padding-bottom: 80px; 
 }
 
+
+
 /* --- 2. HEADER Y MENÚ (FIJO ARRIBA) --- */
 .globalHeader {
     position: fixed;
@@ -55,7 +57,10 @@ body, html {
     text-decoration: none;
 }
 
-/* --- 3. CONTENEDOR HOME (PANTALLA DIVIDIDA) --- */
+
+
+
+/* --- 3. CONTENEDOR HOME --- */
 /* Para que el logo no sea gigante ni rompa el texto */
 .homeLogo {
     width: 120px;
@@ -71,6 +76,7 @@ body, html {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .mainIzquierda {
@@ -85,8 +91,6 @@ body, html {
 .mainDerecha {
     flex: 1;
     height: 100%; /* Obligatorio para que la imagen sepa cuánto medir */
-    padding: 0;
-    margin: 0;
 }
 
 .mainDerecha img {
@@ -96,6 +100,8 @@ body, html {
     object-position: center; /* Asegura que lo más importante esté en medio */
     display: block;
 }
+
+
 
 /* --- 4. CONTENEDOR GENERAL DE PÁGINAS --- */
 .contenedor {
@@ -109,8 +115,6 @@ body, html {
     margin: 0 auto;
     text-align: center;
 }
-
-
 
 .form-peticiones {
     width: 100%;
@@ -168,6 +172,37 @@ body, html {
 }
 
 
+/* --- Login --- */
+.regusersForm {
+    margin: 160px auto 0 auto; /* top + centrado horizontal */
+    text-align: center;
+    width: 300px;
+    padding: 20px;             /* espacio interno */
+    background-color: #a18383;    /* fondo blanco */
+    border-radius: 10px;        /* esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* sombra */
+}
+
+.regusersForm h2 {
+    margin-bottom: 20px;
+}
+
+.regusersForm input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.regusersForm button {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
 /* --- 5. FOOTER (FIJO ABAJO) --- */
 .globalFooter {
     position: fixed;
@@ -194,11 +229,3 @@ body, html {
     font-size: 1.2rem;
 }
 
-/* --- Login --- */
-.regusersForm{
-    margin: auto;
-    text-align: center;
-    padding-top: 160px;
-    width: 300px;
-    height: 300px;
-}
