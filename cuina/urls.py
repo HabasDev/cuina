@@ -26,11 +26,4 @@ urlpatterns = [
     path('', include('faqs.urls')),
     path('', include('peticiones_admin.urls')),
 
-
-
-    #path('registro/', include('registro_usuarios.urls')),
-    #path('recetas/', include('recetas.urls')),
-    #path('introducir/', include('introducir_recetas.urls')),
-    #path('peticiones/', include('peticiones_admin.urls')),
-    #path('faqs/', include('faqs.urls')),
 ]

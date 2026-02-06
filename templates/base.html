@@ -1,15 +1,18 @@
 {% load static %}
+{# Esto carga los archivos estaticos de django #}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web de Cocina</title>
+    {# Enlace al css, django busca "style.css en la ruta que pusimos en static#}
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
     <header class="globalHeader">
         <nav class="navGlobal">
+            {#Enlaces dinámicos, éstos estñan definidos en urls.py#}
             <a href="/" class="navLink">Home</a>
             <a href="{% url 'faqs' %}" class="navLink">FAQs</a>
             <a href="{% url 'peticiones' %}" class="navLink">Peticions</a>
@@ -18,6 +21,7 @@
     </header>
 
     <main>
+        {# aqui es donde se cargara el html de las otras paginas #}
         {% block content %}
         {% endblock %}
     </main>  
@@ -49,10 +53,11 @@
             <a href="javascript:void(0)" onclick="document.getElementById('privacyBanner').style.display='block'">Privacidad</a>
         </div>
         <div class="payments">
-            Metodo de pago: 💳 Visa | 💳 Mastercard | 🅿️ PayPal
+            Método de pago: 💳 Visa | 💳 Mastercard | 🅿️ PayPal
         </div>
     </footer>
     <script>
+        /* Esto controla la visibilidad de los banners */
         function aceptarCookies(){
             document.getElementById('cookieBanner').style.display = 'none';
         }
